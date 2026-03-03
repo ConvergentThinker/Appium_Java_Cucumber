@@ -1,9 +1,8 @@
 #language: pt
+Feature: Login
 
-  Funcionalidade: Login
-
-    @test
-    Cenario: Login com sucesso
-      Dado que eu informe o usuario e senha
-      Quando eu clicar no botão logar
-      Então vou visualizar a home do aplicativo
+@test
+Scenario: Successful login
+  Given that I enter the username and password
+  When I click the login button
+  Then I should see the application home screen
